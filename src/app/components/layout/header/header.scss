@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+
+  a {
+    position: relative;
+    color: white;
+    font-weight: 700;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #61dafb;
+    }
+
+    &:last-child::before {
+      position: absolute;
+      content: '';
+      background-color: #fff;
+      width: 2px;
+      height: 20px;
+      top: 0;
+      left: -10px;
+      pointer-events: none;
+    }
+  }
+}
